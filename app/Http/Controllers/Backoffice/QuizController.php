@@ -135,6 +135,7 @@ class QuizController extends Controller
         $this->data['quiz'] = $this->repo->findOrFail($id);
         $this->data['students'] = $this->resultRepo->studentResult($id);
         $this->data['results'] = $this->resultRepo->results($id);
-        return view('backoffice.pages.quiz.results', $this->data);
+        dd('Quiz Results is Under Development');
+        //return view('backoffice.pages.quiz.results', $this->data);
     }
 }

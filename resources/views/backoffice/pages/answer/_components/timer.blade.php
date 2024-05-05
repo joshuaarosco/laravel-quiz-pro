@@ -22,12 +22,14 @@
         <div class="row clearfix m-t-50">
             <div class="col-xl-12">
                 <div class="clock">
-                    <h1><span class="score"><strong>{{$result->scoreResult()}}</strong></span>/{{ $quiz->questions->count() }}</h1>
+                    <h1><span class="score">0</span>/{{ $quiz->questions->count() }}</h1>
+                    <!-- <h1><span class="score"><strong>{{$result->scoreResult()}}</strong></span>/{{ $quiz->questions->count() }}</h1> -->
                 </div>
             </div>
         </div>
         <div class="text-center m-b-50 m-t-30">
-            <h5>{{ auth()->user()->type == 'student'?'You':'Student' }} got <strong>{{$result->scoreResult()}}</strong> correct {{str_plural('answer', $result->scoreResult()) }} out of <strong>{{ $quiz->questions->count() }}</strong> {{str_plural('questions', $quiz->questions->count()) }}.</h5>
+            <h5>{{ auth()->user()->type == 'student'?'You':'Student' }} got <strong>0</strong> correct {{str_plural('answer', $result->scoreResult()) }} out of <strong>{{ $quiz->questions->count() }}</strong> {{str_plural('questions', $quiz->questions->count()) }}.</h5>
+            <!-- <h5>{{ auth()->user()->type == 'student'?'You':'Student' }} got <strong>{{$result->scoreResult()}}</strong> correct {{str_plural('answer', $result->scoreResult()) }} out of <strong>{{ $quiz->questions->count() }}</strong> {{str_plural('questions', $quiz->questions->count()) }}.</h5> -->
         </div>
         @endif
     </div>

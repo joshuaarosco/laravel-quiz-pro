@@ -197,7 +197,7 @@
             updateTimer();
         }
         @if($result->status == 'on_going')
-        countdown( "countdown", {!! sprintf('%02s', $result->minute) !!}, {!! sprintf('%02s', $result->seconds) !!} );
+        //countdown( "countdown", {!! sprintf('%02s', $result->minute) !!}, {!! sprintf('%02s', $result->seconds) !!} );
         @endif
 
         function updateClock(mins, secs){
